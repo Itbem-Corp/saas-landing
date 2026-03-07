@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Base.astro';
+---
+
+<Layout title="ProServices - Professional Services Platform">
+  <main class="min-h-screen flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold text-gray-900">ProServices</h1>
+      <p class="mt-4 text-xl text-gray-600">Professional Services Management Platform</p>
+      <a
+        href={import.meta.env.PUBLIC_DASHBOARD_URL || '/dashboard'}
+        class="mt-8 inline-block px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+      >
+        Get Started
+      </a>
+    </div>
+  </main>
+</Layout>
